@@ -22,18 +22,80 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap:10px;
-
         }
          .both-content{
             border:2px solid rgb(143, 51, 51);
             border-radius: 10px;
             padding:20px;
-           
         }
-        
         .both-content img{
             width: 50%;
+        } 
+        .both-content img:hover{
+            width:75%;
         }
+        /* $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+); */
+        @media screen and (min-width:0px) and (max-width:576px) {
+            .container{
+                background-color: rgb(83, 83, 243);
+            }
+            
+            button{
+                background-color:black ;
+                color:brown;
+            }
+        }
+        @media screen and (min-width:577px) and (max-width:768px) {
+            .container{
+                background-color: rgb(105, 105, 247);
+            }
+            
+            button{
+                background-color:rgb(20, 1, 1) ;
+                color:rgb(168, 56, 56);
+            }
+        }
+        @media screen and (min-width:769px) and (max-width:992px) {
+            .container{
+                background-color: rgb(119, 119, 240);
+            }
+            
+            button{
+                background-color:rgb(54, 46, 46) ;
+                color:rgb(146, 72, 72);
+            }
+        }
+        @media screen and (min-width:993px) and (max-width:1200px) {
+            .container{
+                background-color: rgb(164, 164, 243);
+            }
+            
+            button{
+                background-color:rgb(102, 92, 92) ;
+                color:rgb(156, 106, 106);
+            }
+        }
+        @media screen and (min-width:1201px) and (max-width:1400px) {
+            .container{
+                background-color: rgb(223, 223, 235);
+            }
+            
+            button{
+                background-color:rgb(163, 154, 154) ;
+                color:white;
+            }
+        }
+
+
+
+
 
         
 
@@ -67,7 +129,7 @@
 
                 <div class="both-content">
                     <img src="images/camera.jpg" alt="">
-                        <h2>item-1
+                        <h2>item-2
 
                         </h2>
                             <h4>price:100
@@ -84,7 +146,7 @@
             
                 <div class="both-content">
                     <img src="images/microphone.png" alt="">
-                        <h2>item-1
+                        <h2>item-3
 
                         </h2>
                             <h4>price:100
@@ -100,7 +162,7 @@
             
                 <div class="both-content">
                     <img src="images/stand-camera.jpg" alt="">
-                        <h2>item-1
+                        <h2>item-4
 
                         </h2>
                         <h4>price:100
@@ -118,7 +180,7 @@
             
                  <div class="both-content">
                     <img src="images/stand-light.jpg" alt="">
-                        <h2>item-1
+                        <h2>item-5
 
                         </h2>
                             <h4>price:100
@@ -133,7 +195,7 @@
             
                 <div class="both-content">
                     <img src="images/table-light.jpg" alt="">
-                    <h2>item-1
+                    <h2>item-6
 
                     </h2>
                     <h4>price:100
